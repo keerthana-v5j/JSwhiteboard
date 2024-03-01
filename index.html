@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>whiteboard App</h1>
+    <ul class="horizontal">
+        <li class="dropdown">
+          <a href="#" class="dropbtn">File</a>
+          <div class="dropdown-content">
+            <a href="#" id="clearButton">Clear</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn" id="drawButton">Draw</a>
+        </li>
+        <li>
+          <a href="#" onclick="typeMode = true">Type</a>
+        </li>
+        <li>
+          <a href="#" onclick="eraseMode = true; drawMode = false" style="border-right: 1px solid #000000;">Erase</a>
+        </li>
+          <li class="dropdown">
+          <a href="#" class="dropbtn">Width</a>
+          <div class="dropdown-content">
+            <a href="#" onclick="setLineThickness(1)">1</a>
+            <a href="#" onclick="setLineThickness(2)">2</a>
+            <a href="#" onclick="setLineThickness(3)">3</a>
+            <a href="#" onclick="setLineThickness(4)">4</a>
+            <a href="#" onclick="setLineThickness(5)">5</a>
+            <a href="#" onclick="setLineThickness(6)">6</a>
+            <a href="#" onclick="setLineThickness(7)">7</a>
+            <a href="#" onclick="setLineThickness(8)">8</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Color</a>
+          <div class="dropdown-content">
+            <a href="#" id="makeBlack">Black</a>
+            <a href="#" id="makeRed">Red</a>
+            <a href="#" id="makeOrange">Orange</a>
+            <a href="#" id="makeYellow">Yellow</a>
+            <a href="#" id="makeGreen">Green</a>
+            <a href="#" id="makeBlue">Blue</a>
+            <a href="#" id="makePurple">Purple</a>
+          </div>
+        </li>
+      </ul>
+      
+      
+      <center><canvas id="canvas" style="border:1px solid black;"></canvas></center>
+      <p id="console"></p>
+    <script src="script.js"></script>
+</body>
+</html>
